@@ -144,7 +144,7 @@ getmydisk(){
 	printf -- '------------------------\n'
 	printf " Disk usage info\n"
 	printf -- '------------------------\n'
-	printf "$(df | awk ' NR>1 {print $5 " " $6}')\n"
+	df --output=pcent,source
 	read -p "Press [Enter] to countinue..." e 
 }
 #generates a tree of all files recursively from home directory into html by calling seperate #script
